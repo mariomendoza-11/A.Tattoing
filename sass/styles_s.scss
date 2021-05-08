@@ -1,0 +1,183 @@
+$listas_bag: a1, a5, a9, a13, a17;
+$margin: 10px 10px;
+$padding: 50px 50px;
+
+@mixin diseño {
+  margin: $margin;
+  width: 284px;
+  height: 560px;
+  border-radius: 22px;
+  box-shadow: 5px 5px 30px 7px var(--sombra);
+  cursor: pointer;
+  transition: 0.4s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin dimension {
+  margin: $margin;
+  width: 284px;
+  height: 560px;
+  border-radius: 22px;
+  box-shadow: 5px 5px 12px 7px var(--sombra);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.galery {
+  padding: $padding;
+  .cards__galery {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  h2 {
+    color: var(--rojo-intenso);
+    font-size: 5.8rem;
+    font-weight: 500;
+    line-height: 7.5rem;
+    text-align: center;
+    padding-bottom: 2.4rem;
+    padding: $padding;
+  }
+  @media all and (max-width: 500px) {
+    .card__list {
+      flex-direction: column;
+    }
+  }
+  @each $bag in $listas_bag {
+    .cards__#{$bag} {
+      @include diseño;
+    }
+  }
+  @each $bag in $listas_bag {
+    .cards__#{$bag}:hover {
+      transform: scale(1, 1);
+      box-shadow: 5px 5px 30px 15px #3c096c86;
+    }
+  }
+  .cards__a1 {
+    background-image: url("/img/4_2.png");
+    padding: 3rem;
+        h3{
+      text-align: center;
+    }
+  }
+  .cards__a5 {
+    background-image: url("/img/4_3.png");
+    padding: 3rem;
+    h3{
+      text-align: center;
+    }
+  }
+  .cards__a9 {
+    background-image: url("/img/4.5.png");
+    padding: 3rem;
+    h3{
+      text-align: center;
+    }
+  }
+  .cards__a13 {
+    background-image: url("/img/4_4.png");
+    padding: 3rem;
+    h3{
+      text-align: center;
+    }
+  }
+  .cards__a17 {
+    padding: 3rem;
+    background-image: url("/img/4_1.png");
+    h3{
+      text-align: center
+    }
+  }
+  img {
+    @include dimension;
+  }
+  img:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px #3c096c86;
+  }
+}
+
+/*-------===============--líneas de atención-----------boootstrap CARDS-----------líneas de atención------===================-----*/
+$fondo: #3c096c;
+$tarjetas: "1" #e7daece1, "2" #d5ccddc7;
+$segundo_ico: "bi-envelope" #ff0a54, "bi-alarm" #ff0a53e5;
+@mixin ico {
+  font-size: 10rem;
+  color: $fondo;
+}
+
+@mixin dimensiones_cards {
+  text-align: center;
+  margin: 30px 27px;
+  width: 284px;
+  height: 360px;
+  border-radius: 22px;
+  box-shadow: 5px 5px 8px 2px var(--sombra);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.ubicacion {
+  background-color: $fondo;
+  padding: 20px 20px;
+  .cards_ubic {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    width: 100%;
+
+    h5 {
+      font-size: 2rem;
+      color: #3c096c;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    h6 {
+      font-size: 1.2rem;
+    }
+
+    @each $objeto, $color in $segundo_ico {
+      .#{$objeto} {
+        color: $color;
+        font-size: 4rem;
+      }
+    }
+  }
+  @each $tipo, $color in $tarjetas {
+    .card__#{$tipo} {
+      background-color: $color;
+      @include dimensiones_cards;
+      text-align: center;
+    }
+  }
+  @media all and (max-width: 450px) {
+    .cards_ubic {
+      flex-direction: column;
+      align-items: center
+    }
+  }
+  @media all and (max-width: 832px) {
+    .cards_ubic {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.bi-compass {
+  @include ico;
+}
+
+.bi-telephone-inbound {
+  @include ico;
+}
+/*-------===============--líneas de atención-----------boootstrap CARDS-----------líneas de atención------===================-----*/
