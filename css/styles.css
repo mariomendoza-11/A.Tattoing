@@ -458,31 +458,31 @@ nav .nav-ul ul ul li {
   box-shadow: 5px 5px 30px 15px #3c096c86;
 }
 .card__list--img1{
-  background-image: url("img/4_1.png");
+  background-image: url("../img/4_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .card__list--img2{
-  background-image: url("img/4_2.png");
+  background-image: url("../img/4_2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .card__list--img3{
-  background-image: url("img/4_3.png");
+  background-image: url("../img/4_3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .card__list--img4{
-  background-image: url("img/4_5.png");
+  background-image: url("../img/4_5.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .card__list--img5{
-  background-image: url("img/4_4.png");
+  background-image: url("../img/4_4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
