@@ -197,7 +197,6 @@
   border-radius: 22px;
   -webkit-box-shadow: 5px 5px 12px 7px var(--sombra);
           box-shadow: 5px 5px 12px 7px var(--sombra);
-  cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -260,7 +259,6 @@
   border-radius: 22px;
   -webkit-box-shadow: 5px 5px 8px 2px var(--sombra);
           box-shadow: 5px 5px 8px 2px var(--sombra);
-  cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   text-align: center;
@@ -275,7 +273,6 @@
   border-radius: 22px;
   -webkit-box-shadow: 5px 5px 8px 2px var(--sombra);
           box-shadow: 5px 5px 8px 2px var(--sombra);
-  cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   text-align: center;

@@ -423,7 +423,6 @@ nav .nav-ul ul ul li {
   height: 400px;
   border-radius: 22px;
   box-shadow: 5px 5px 30px 7px var(--sombra);
-  cursor: pointer;
   transition: 0.4s;
   }
 .box_costo:hover{
