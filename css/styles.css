@@ -40,7 +40,7 @@ section {
     padding-bottom: 2rem;
 }
 /*==================0== menú ===================*/
-/*==================0== menú ===================*/
+
 .container {
   width: 100%;
   max-width: 120rem;
@@ -182,7 +182,6 @@ nav .nav-ul ul ul li {
       font-size: 58%;
     }
 }
-
 @media (max-width: 991px) {
     section {
       padding: 0 5%;
@@ -240,7 +239,7 @@ nav .nav-ul ul ul li {
         font-weight: 400;
         display: block;
     }
-    
+
     .bi-house {
         color: var(--gris-palido);
         font-weight: 400;
@@ -255,7 +254,7 @@ nav .nav-ul ul ul li {
 
     li a:hover {
         color: var(--rojo-intenso);
-    *}
+      }
 
     nav ul li a:hover::before {
         opacity: 0;
@@ -269,8 +268,7 @@ nav .nav-ul ul ul li {
     }
     nav ul li .submenu{
         width: 100%;
-        position: relative;
-        
+        position: relative; 
     } 
     nav ul li .submenu li a{
         text-align: center;
@@ -287,23 +285,23 @@ nav .nav-ul ul ul li {
     .home {
         flex-flow: column-reverse;
       }
-    
+
       .home .image img {
         width: 100%;
       }
-    
+
       .home .content h1 {
         font-size: 3.6rem;
       }
-    
+
       .home .content p {
         font-size: 1.5rem;
       }
-    
+
       .about {
         background-position: right;
       }
-    
+
       .newsletter p {
         width: auto;
       }
@@ -320,28 +318,28 @@ nav .nav-ul ul ul li {
     .home {
       flex-flow: column-reverse;
     }
-  
+
     .home .image img {
       width: 100%;
     }
-  
+
     .home .content h1 {
       font-size: 3.6rem;
     }
-  
+
     .home .content p {
       font-size: 1.5rem;
     }
-  
+
     .about .info {
       background-position: right;
     }
-  
+
     .about .column .content .buttons a {
       width: 100%;
       text-align: center;
     }
-  
+
     .about .column .content .buttons a:last-child {
       margin: 1rem ;
     }
@@ -352,7 +350,7 @@ nav .nav-ul ul ul li {
     .info .info_column .info_cont a:last-child {
       margin: 2rem;
     }
-    
+
   }
   
 /*===== principal===========*//*===== principal===========*/
